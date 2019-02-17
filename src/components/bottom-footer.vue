@@ -37,7 +37,7 @@
         flat
         value="Attending"
         router
-        to="/atending"
+        to="/attending"
       >
         <span>Attending</span>
         <v-icon>rounded_corner</v-icon>
