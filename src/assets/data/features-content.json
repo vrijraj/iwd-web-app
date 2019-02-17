@@ -1,0 +1,14 @@
+[
+    {
+        "title":"I'm Remarkable Workshop",
+        "description":"A Google initiative empowering women and underrepresented groups to celebrate their achievements in the workplace and beyond. The 90 minute workshop will highlight to participants the importance of self promotion in their careers and provide them with the tools to start developing this skill."
+    },
+    {
+        "title":"Firebase for Web",
+        "description":"Firebase is Google's mobile platform that helps you quickly develop high-quality apps and grow your business. Firebase frees developers to focus crafting fantastic user experiences. You don’t need to manage servers. You don’t need to write APIs. Firebase is your server, your API and your datastore, all written so generically that you can modify it to suit most needs. Yeah, you’ll occasionally need to use other bits of the Google Cloud for your advanced applications. Firebase can’t be everything to everybody. But it gets pretty close."
+    },
+    {
+        "title":"Google Cloud Platform",
+        "description":"Google Cloud Platform is a suite of public cloud computing services offered by Google. ... Google Cloud Platform offers services for compute, storage, networking, big data, machine learning and the internet of things (IoT), as well as cloud management, security and developer tools. Google Cloud Platform offers services for compute, storage, networking, big data, machine learning and the internet of things (IoT), as well as cloud management, security and developer tools. "
+    }
+]
