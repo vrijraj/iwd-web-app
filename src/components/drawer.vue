@@ -1,6 +1,5 @@
 <template>
-  <v-app class="white">
-
+  <nav>
     <v-navigation-drawer
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
@@ -47,27 +46,12 @@
         <v-btn flat route to="/speakers">Speakers</v-btn>
       </v-toolbar-items>
     </v-toolbar>
-
-    <v-content>
-      <router-view></router-view>
-    </v-content>
-    <bottomNavbar/>
-    <cofooter/>
-  </v-app>
+</nav>
 </template>
 
 <script>
-
-import bottomNavbar from './components/bottom-footer'
-import cofooter from './components/footer'
-
-export default {
-  name: 'App',
-  components: {
-    bottomNavbar,
-    cofooter,
-  },
-  data: () => ({
+  export default {
+    data: () => ({
       drawer: null,
       items: [
             { title: 'Home', icon: 'dashboard', route:"/home" },
@@ -76,5 +60,12 @@ export default {
             { title: 'Speakers', icon: 'group', route:"/speakers" }
         ],
     }),
-}
+    methods:{
+      
+    },
+    mounted(){
+      // this.drawer = 
+      // console.log(this.drawer)
+    }
+  }
 </script>
