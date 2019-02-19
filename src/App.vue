@@ -69,7 +69,7 @@ export default {
     cofooter,
   },
   data: () => ({
-      drawer: null,
+      drawer: false,
       items: [
             { title: 'Home', icon: 'dashboard', route:"/home" },
             { title: 'Attending', icon: 'rounded_corner', route:"/attending" },
