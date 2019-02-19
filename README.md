@@ -1,4 +1,10 @@
-# iwd19-app
+# IWD19-WTM Web App
+
+## Technogical Stack
+1. VueJS
+1. Vuetify
+1. Firebase
+1. VueX
 
 ## Project setup
 ```
