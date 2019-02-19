@@ -18,8 +18,8 @@
                 <!-- <img src="@/assets/imgs/bg.jpg" class="ma-0" width="100%" alt=""> -->
             </v-flex>
 
-            <v-flex xs12 md12 class="pa-3">
-                <h1 class="google-font hidden-sm-and-down" >Attending</h1>
+            <v-flex xs12 md10 class="pa-3">
+                <h1 class="google-font hidden-sm-and-down mt-5" >Attending</h1>
                 <p class="mt-0 google-font" style="font-size:110%">Women Techmakers is a program created by Google to celebrate International Women's Day and to highlight the talent of women in technology.</p>
     
 
@@ -37,7 +37,7 @@
             
             
             <v-layout class="mt-0 pa-0" wrap row>
-                <faq/>
+                    <faq/>
             </v-layout>
 
            

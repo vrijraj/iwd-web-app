@@ -32,28 +32,8 @@
     {
         "name":"Abhishek",
         "location":"Jalandhar",
-        "designation":"",
-        "company": "",
-        "about":"",
-        "twitter":"",
-        "profileImage":"https://gdgjalandhar.com/assets/img/team/vrij.jpg",
-        "status":""
-    },
-    {
-        "name":"Vrijraj",
-        "location":"Jalandhar",
-        "designation":"",
-        "company": "",
-        "about":"",
-        "twitter":"",
-        "profileImage":"https://gdgjalandhar.com/assets/img/team/vrij.jpg",
-        "status":""
-    },
-    {
-        "name":"Vrijraj",
-        "location":"Jalandhar",
-        "designation":"",
-        "company": "",
+        "designation":"System Engineer",
+        "company": "Infosys",
         "about":"",
         "twitter":"",
         "profileImage":"https://gdgjalandhar.com/assets/img/team/vrij.jpg",

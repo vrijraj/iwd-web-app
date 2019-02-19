@@ -1,7 +1,7 @@
 <template>
     <v-container fluid>
-        <v-layout wrap row class="pa-0">
-            <v-flex xs12 md12>
+        <v-layout wrap class="pa-0" align-center justify-center row fill-height>
+            <v-flex xs12 md10 lg10>
                 <h2 class="google-font mt-2" >Frequently Asked Questions</h2>
             </v-flex>
             
@@ -18,9 +18,6 @@
                     </v-expansion-panel-content>
                 </v-expansion-panel>
             </v-flex>
-           
-
-           
         </v-layout>
     </v-container>
 </template>

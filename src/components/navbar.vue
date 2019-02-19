@@ -6,6 +6,10 @@
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
       app
+      disable-resize-watcher
+      disable-route-watcher
+      hide-overlay
+      
     >
     <!-- <v-toolbar flat class="transparent">
       <v-list class="pa-0">
@@ -57,10 +61,9 @@
       color="white"
       app
       fixed
-      tabs
       scroll-off-screen
-      
-
+      flat
+      class="elevation-3"
     >
     <!-- @touchend.prevent.native -->
     <!--  @click.stop="drawer = !drawer" -->

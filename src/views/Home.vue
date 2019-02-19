@@ -1,11 +1,14 @@
 <template>
-  <v-container>
-    <startscreen/>
-    <stats/>
-    <homespeaker/>
-    <featureListing/>
-    <partners/>
-
+  <v-container fluid>
+    <v-layout wrap align-center justify-center row>
+      <v-flex xs12 md10 lg10>
+        <startscreen/>
+        <stats/>
+        <homespeaker/>
+        <featureListing/>
+        <partners/>
+      </v-flex>
+    </v-layout>
   </v-container>
 </template>
 
