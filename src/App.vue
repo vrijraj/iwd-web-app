@@ -36,7 +36,7 @@
       fixed
     >
       <v-toolbar-side-icon class="hidden-sm-and-up" @click.stop="drawer =!drawer"></v-toolbar-side-icon>
-      <v-toolbar-title class="ml-0 pl-3">   
+      <v-toolbar-title class="ml-0 pl-1">   
         <span class="google-font">IWD19 Jalandhar</span>
       </v-toolbar-title>
 
@@ -51,6 +51,7 @@
     <v-content>
       <router-view></router-view>
     </v-content>
+
     <bottomNavbar/>
     <cofooter/>
   </v-app>
