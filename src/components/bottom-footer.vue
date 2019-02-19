@@ -6,6 +6,7 @@
       app
       dark
       color="indigo"
+      class="elevation-2"
       
     >
       <!-- <v-btn

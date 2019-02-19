@@ -13,10 +13,10 @@
             </v-flex>
 
             <v-flex xs12 md6>
-                <img src="assets/img/bg.jpg" width="100%" alt="" srcset="">
+                <!-- <img src="assets/img/bg.jpg" width="100%" alt="" srcset="">
                 <p class="google-font">
                     Women Techmakers is a program created by Google to celebrate International Women's Day and to highlight the talent of women in technology. In 2019, we’re organizing the fourth edition in Montreal as part of the special event The Women Techmakers Global Event Series Celebrating International Women’s Day (WTM IWD). This program has been in over 200 global events and seen across 52 countries. The main focus of this community-building initiative is to promote talented and passionate women, increase the visibility of the Montreal technology community and empower women in technology.
-                </p>
+                </p>  -->
             </v-flex>
         </v-layout>
     </v-container>

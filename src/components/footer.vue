@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid class="mt-5 text-xs-center">
+    <v-container fluid class="mt-5 text-xs-center hidden-md-and-down">
         <v-layout wrap align-center justify-center row fill-height>
             <v-flex xs12 md12>
                 <v-divider></v-divider>

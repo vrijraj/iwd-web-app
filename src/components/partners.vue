@@ -12,6 +12,7 @@
                     <v-flex xs6 sm2 md2 lg2 v-for="itemp in partnerData" :key="itemp.name" class="pa-1">
                         <a v-bind:href="itemp.link" target="_blank">
                             <div class="elevation-1 pa-2">
+                                {{itemp.img}}
                                 <img :src="itemp.img" width="100%" alt="" srcset="">
                             </div>
                         </a>
