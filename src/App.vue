@@ -36,17 +36,24 @@
       class="elevation-3"
       scroll-off-screen
       fixed
+      height="55px"
     >
       <v-toolbar-side-icon class="hidden-sm-and-up" @click.stop="drawer =!drawer"></v-toolbar-side-icon>
-      <v-toolbar-title class="ml-0 pl-1 mr-2">   
+      <v-toolbar-title class="ml-0 pl-1 mr-1">   
+        <span>
+          
+        </span>
         <span class="google-font">IWD19 Jalandhar</span>
       </v-toolbar-title>
-      
-      <v-btn class="ma-1 hidden-sm-and-down google-font" 
+      <v-spacer></v-spacer>
+      <v-btn class="mx-1 hidden-sm-and-down google-font" 
         flat v-for="(item, i) in items" 
+        
         :key="i" 
-        router      
+        router  
+        style="text-transform: capitalize;"    
         :to="item.route">
+        <!-- <v-icon small left>{{item.icon}}</v-icon> -->
         {{item.title}}
       </v-btn>
       <!-- <v-btn
@@ -68,7 +75,7 @@
       </v-toolbar-items> -->
     </v-toolbar>
 
-    <v-content>
+    <v-content transition="slide-y-transition">
       <router-view></router-view>
     </v-content>
 
@@ -93,7 +100,7 @@ export default {
       items: [
             { title: 'Home', icon: 'dashboard', route:"/home" },
             { title: 'Attending', icon: 'rounded_corner', route:"/attending" },
-            { title: 'Sessions', icon: 'toc', route:"/sessions" },
+            { title: 'Agenda', icon: 'toc', route:"/agenda" },
             { title: 'Speakers', icon: 'group', route:"/speakers" }
         ],
     }),

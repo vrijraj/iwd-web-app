@@ -47,11 +47,11 @@
       <v-btn
         color="white"
         flat
-        value="Sessions"
+        value="Agenda"
         router
-        to="/sessions"
+        to="/agenda"
       >
-        <span>Sessions</span>
+        <span>Agenda</span>
         <v-icon>toc</v-icon>
       </v-btn>
 

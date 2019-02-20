@@ -34,9 +34,9 @@ export default new Router({
       component: () => import('./views/speakers.vue')
     },
     {
-      path: '/sessions',
-      name: 'sessions',
-      component: () => import('./views/sessions.vue')
+      path: '/agenda',
+      name: 'agenda',
+      component: () => import('./views/agenda.vue')
     },
     {
       path: '/teams',

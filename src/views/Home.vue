@@ -1,5 +1,6 @@
 <template>
-  <v-container fluid>
+  <v-slide-y-reverse-transition>
+  <v-container fluid v-show="show">
     <v-layout wrap align-center justify-center row>
       <v-flex xs12 md10 lg10>
         <startscreen/>
@@ -10,6 +11,7 @@
       </v-flex>
     </v-layout>
   </v-container>
+  </v-slide-y-reverse-transition>
 </template>
 
 <script>
@@ -28,5 +30,13 @@
       partners,
       featureListing
     },
+    data(){
+      return{
+        show:false
+      }
+    },
+    created(){
+      this.show = true
+    }
   }
 </script>

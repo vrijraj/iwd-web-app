@@ -1,8 +1,9 @@
 <template>
-    <v-container fluid class="mt-3">
+    <v-slide-y-reverse-transition>
+    <v-container fluid class="mt-3" v-show="show">
         <v-layout wrap align-center justify-center row fill-height class="pa-3">
             <v-flex xs12 md10 lg10>
-                <h1 class="google-font mt-2" >Our lineup of big thinkers and even bigger doers</h1>
+                <h1 class="google-font mt-2" style="color:#4a4a4a">Our lineup of big thinkers and even bigger doers</h1>
                 <p class="mt-0 google-font subheading">Get ready to be inspired by speakers who are building a cloud full of opportunity with our partners and customers. Stay tuned as we add more dynamic speakers to our lineup..</p>
             </v-flex>
 
@@ -15,16 +16,19 @@
                             <img :src=item.profileImage alt="avatar">
                         </v-avatar>
                         <p class="mt-3 mb-0 google-font" style="font-size:140%">{{item.name}}</p>
-                        <p class="mt-1 google-font">{{item.company}}</p>
-                        <a :href="item.twitter" style="font-size:110%">
-                            Twitter
-                        </a>
+                        <p class="mt-1 mb-0 google-font">{{item.company}}</p>
+
+                        <v-btn class="mt-0"  icon v-if="item.twitter.length>0" :href="item.twitter" target="_blank">
+                            <v-icon color="blue">public</v-icon>
+                        </v-btn>
+                      
                     </v-flex>
                 </v-layout>
             </v-flex>
            
         </v-layout>
     </v-container>
+    </v-slide-y-reverse-transition>
 </template>
 
 <script>
@@ -32,9 +36,13 @@
 export default {
     data() {
         return {
+            show:false,
             dialog: false,
             speakersData: teamdata
         }
+    },
+    mounted(){
+        this.show = true
     }
 }
 </script>

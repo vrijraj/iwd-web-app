@@ -9,8 +9,7 @@ export const store = new Vuex.Store({
       vname:"asdasd"
     },
     mutations: {
-        changeDrawerState: (state) => {
-            state.drawer = !state.drawer
-        }
+        setDrawer: (state, payload)=>(state.drawer = payload),
+        toggleDrawer: state=>(state.drawer = !state.drawer)
     }
 })

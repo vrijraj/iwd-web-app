@@ -1,5 +1,4 @@
 <template>
-  <nav>
     <v-navigation-drawer
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
@@ -14,6 +13,7 @@
         <v-list-tile
             v-for="item in items"
             :key="item.title"
+            @click="onClick($event, link)"
             router :to="item.route"
         >   
             <v-list-tile-action>
@@ -26,30 +26,10 @@
         </v-list-tile>
       </v-list>  
     </v-navigation-drawer>
-
-    <v-toolbar
-      :clipped-left="$vuetify.breakpoint.lgAndUp"
-      color="white"
-      app
-      scroll-off-screen
-      fixed
-    >
-      <v-toolbar-side-icon class="hidden-sm-and-up" @click.stop="drawer =!drawer"></v-toolbar-side-icon>
-      <v-toolbar-title class="ml-0 pl-3">   
-        <span class="google-font">IWD19 Jalandhar</span>
-      </v-toolbar-title>
-
-       <v-toolbar-items class="hidden-sm-and-down google-font ml-3">
-        <v-btn flat route to="/home">Home</v-btn>
-        <v-btn flat route to="/attending">Attending</v-btn>
-        <v-btn flat route to="/sessions">Sessions</v-btn>
-        <v-btn flat route to="/speakers">Speakers</v-btn>
-      </v-toolbar-items>
-    </v-toolbar>
-</nav>
 </template>
 
 <script>
+  import { mapGetters, mapMutations } from 'vuex'
   export default {
     data: () => ({
       drawer: null,
@@ -60,12 +40,32 @@
             { title: 'Speakers', icon: 'group', route:"/speakers" }
         ],
     }),
-    methods:{
-      
+    computed: {
+      // ...mapGetters(['links']),
+      drawer: {
+        get () {
+          return this.$store.state.drawer
+        },
+        set (val) {
+          this.setDrawer(val)
+        }
+      }
     },
-    mounted(){
-      // this.drawer = 
-      // console.log(this.drawer)
+     methods: {
+      ...mapMutations(['setDrawer']),
+      onClick (e, item) {
+        e.stopPropagation()
+        if (item.to === '/') {
+          this.$vuetify.goTo(0)
+          this.setDrawer(false)
+          return
+        }
+        if (item.to || !item.href) return
+        this.$vuetify.goTo(item.href)
+        this.setDrawer(false)
+      }
     }
+      
+  
   }
 </script>
