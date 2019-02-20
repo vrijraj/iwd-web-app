@@ -1,9 +1,9 @@
 <template>
-    <v-container fluid class="mt-3">
+    <v-container fluid >
         <v-layout wrap align-center justify-center row fill-height>
             <v-flex xs12 md6>
                 <img src="https://www.womentechmakers.com/static/images/wtm-icon@2x.png" class="" width="60vh" alt="" srcset="">
-                <h1 class="google-font mt-2" >International Women's Day 2019</h1>
+                <h1 class="google-font mt-1" style="color:#4a4a4a">International Women's Day 2019</h1>
                 <p class="mt-3 google-font subheading">International Women's Day (IWD) is marked on March 8th every year. In different regions, the focus of celebrations ranges from general respect and appreciation for women to a celebration of women's economic, political, and social achievements.</p>
 
                 <p class="grey--text google-font mb-0">31st March | 9 am to 5 pm | Venue</p>

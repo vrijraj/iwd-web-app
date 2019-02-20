@@ -1,5 +1,6 @@
 <template>
-    <v-container fluid class="pa-0">
+    <v-slide-y-reverse-transition>
+    <v-container fluid class="pa-0"  v-show="show">
         <v-layout wrap align-center justify-center row>
 
             <v-flex xs12>
@@ -15,21 +16,23 @@
                     </v-layout>
                 </v-img>
             </v-flex>
-            
-            <v-flex xs12 md9 sm10 lg9 class="pa-0">
+
+        
+            <v-flex xs12 md9 sm10 lg10 class="pa-0">
                 <v-tabs
                     v-model="active"
-                    color="indigo"
-                    slot="extension"
-                    dark
+                    color="grey lighten-5"
                     slider-color="yellow">
-                    <v-tab ripple>
+
+                    <v-tab ripple style="text-transform: capitalize;" >
                         Schedule
                     </v-tab>
+
                     <v-tab-item>
                         <v-card flat>
                             <v-card-text>
                                 <v-layout justify-start row fill-height wrap>
+                                    
                                     <v-flex xs12 sm4 md3 lg3 class="pa-2" v-for="(item,i) in sessions" :key="i">
                                         <v-card class="elevation-0" style="border: 1px solid #f5f6f7;min-height:280px;">
                                             <v-card-title primary-title>
@@ -44,12 +47,13 @@
                                             </v-card-title>
                                         </v-card>
                                     </v-flex>
+
                                 </v-layout>
                             </v-card-text>
                         </v-card>
                     </v-tab-item>
 
-                    <v-tab ripple>
+                    <v-tab ripple style="text-transform: capitalize;" >
                         Session
                     </v-tab>
                     <v-tab-item>
@@ -65,7 +69,7 @@
                                     >
                                         <v-timeline-item
                                             :color="showColor(item.tag)"
-                                            small
+                                            small 
                                         >
                                             <v-layout pt-3>
                                                 <v-flex xs3>
@@ -96,6 +100,7 @@
            
         </v-layout>
     </v-container>
+    </v-slide-y-reverse-transition>
 </template>
 
 <script>
@@ -105,13 +110,16 @@ import scheduledata from '@/assets/data/schedule.json'
 export default {
     data() {
         return {
+            show:false,
             imgPath:{
                 src: require('@/assets/imgs/bg.jpg')
                 // "../assets/imgs/bg.jpg"
                 },
                 active: null,
                 sessions:data,
-                scheduleData:scheduledata
+                scheduleData:scheduledata,
+                model: 'tab-2',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
         }
     },
     methods:{
@@ -137,6 +145,9 @@ export default {
                 return "cloud"
             }
         }
+    },
+    mounted(){
+        this.show = true
     }
 }
 </script>
