@@ -32,20 +32,40 @@
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       color="white"
       app
+      flat
+      class="elevation-3"
       scroll-off-screen
       fixed
     >
       <v-toolbar-side-icon class="hidden-sm-and-up" @click.stop="drawer =!drawer"></v-toolbar-side-icon>
-      <v-toolbar-title class="ml-0 pl-1">   
+      <v-toolbar-title class="ml-0 pl-1 mr-2">   
         <span class="google-font">IWD19 Jalandhar</span>
       </v-toolbar-title>
+      
+      <v-btn class="ma-1 hidden-sm-and-down google-font" 
+        flat v-for="(item, i) in items" 
+        :key="i" 
+        router      
+        :to="item.route">
+        {{item.title}}
+      </v-btn>
+      <!-- <v-btn
+        v-for="(item, i) in items"
+        :key="i"
+        :to="item.route"
+        class="ml-0 hidden-sm-and-down"
+        flat
+        @click="onClick($event, item)"
+      >
+        {{ item.itile }}
+      </v-btn> -->
 
-       <v-toolbar-items class="hidden-sm-and-down google-font ml-3">
+       <!-- <v-toolbar-items class="hidden-sm-and-down google-font ml-3">
         <v-btn flat route to="/home">Home</v-btn>
         <v-btn flat route to="/attending">Attending</v-btn>
         <v-btn flat route to="/sessions">Sessions</v-btn>
         <v-btn flat route to="/speakers">Speakers</v-btn>
-      </v-toolbar-items>
+      </v-toolbar-items> -->
     </v-toolbar>
 
     <v-content>
@@ -77,5 +97,13 @@ export default {
             { title: 'Speakers', icon: 'group', route:"/speakers" }
         ],
     }),
+    methods:{
+      // onClick (e, item) {
+      //   e.stopPropagation()
+      //   if (item.route || !item.href) return
+      //   this.$vuetify.goTo(item.route)
+      // }
+    }
+    
 }
 </script>
