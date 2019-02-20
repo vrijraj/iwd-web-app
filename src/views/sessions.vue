@@ -29,12 +29,16 @@
                     <v-tab-item>
                         <v-card flat>
                             <v-card-text>
-                                <v-layout row wrap>
-                                    <v-flex xs12 sm3 md3 lg3 class="pa-2" v-for="item in sessions" :key="item.title">
-                                        <v-card>
+                                <v-layout justify-start row fill-height wrap>
+                                    <v-flex xs12 sm4 md3 lg3 class="pa-2" v-for="(item,i) in sessions" :key="i">
+                                        <v-card class="elevation-0" style="border: 1px solid #f5f6f7;min-height:280px;">
                                             <v-card-title primary-title>
                                             <div>
-                                                <h3 class="headline mb-0 google-font">{{item.title}}</h3>
+                                                <h4 class="mb-0 google-font" style="font-size:130%;color:#424242">{{item.title}}</h4>
+                                                <v-chip v-if="item.track.length>0" label small class="ma-0 my-1" outline :color="showColor(item.track)">
+                                                    <v-icon small left>{{showIcon(item.track)}}</v-icon>
+                                                    {{item.track}}
+                                                </v-chip>
                                                 <div class="google-font">{{item.des}}</div>
                                             </div>
                                             </v-card-title>
@@ -56,7 +60,7 @@
                                     <v-timeline
                                         align-top
                                         dense
-                                        v-for="item in scheduleData" :key="item"
+                                        v-for="(item,i) in scheduleData" :key="i"
                                         class=""
                                     >
                                         <v-timeline-item
@@ -71,6 +75,7 @@
                                                     <strong class="google-font">{{item.topic}}</strong>
                                                     <div class="caption">
                                                         <v-chip v-if="item.tag.length>0" label small class="ma-0" outline :color="showColor(item.tag)">
+                                                            <v-icon small left>{{showIcon(item.tag)}}</v-icon>
                                                             {{item.tag}}
                                                         </v-chip>
                                                     </div>
@@ -119,6 +124,17 @@ export default {
             }
             else if(tag == "Cloud"){
                 return "orange"
+            }
+        },
+        showIcon(tag){
+            if(tag == "Web"){
+                return "code"
+            }
+            else if(tag == "Mobile"){
+                return "stay_primary_portrait"
+            }
+            else if(tag == "Cloud"){
+                return "cloud"
             }
         }
     }
