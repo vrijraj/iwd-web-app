@@ -3,6 +3,7 @@
     <v-container fluid class="mt-3" v-show="show">
         <v-layout wrap align-center justify-center row fill-height class="pa-3">
             <v-flex xs12 md10 lg10>
+                <span class="pa-2 google-font" style="border-radius:8px;background-color:#F9FBE7;color:#827717;font-size:150%">Speakers</span>
                 <h1 class="google-font mt-2" style="color:#37474F">Our lineup of big thinkers and even bigger doers</h1>
                 <p class="mt-0 google-font subheading">Get ready to be inspired by speakers who are building a cloud full of opportunity with our partners and customers. Stay tuned as we add more dynamic speakers to our lineup..</p>
             </v-flex>

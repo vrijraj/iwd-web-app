@@ -20,9 +20,9 @@
                         {{hs.name}} &nbsp;
                     </span>
                 </p>
-                <v-btn href="#" round color="blue" style="text-transform: capitalize;"   class="ml-0" dark>Request for an Invatation</v-btn>
+                <v-btn href="#" round color="blue" style="text-transform: capitalize;border-radius:8px"   class="ml-0" dark>Request for an Invatation</v-btn>
 
-                <v-btn :href="data.eventMeetupLink" target="_blank" round color="cyan" style="text-transform: capitalize;" flat  class="ml-0" dark>Meetup</v-btn>
+                <v-btn :href="data.eventMeetupLink" target="_blank" round color="cyan" style="text-transform: capitalize;border-radius:8px" flat  class="ml-0" dark>Meetup</v-btn>
             </v-flex>
 
             <v-flex xs12 md5 class="hidden-sm-and-down pl-5">
