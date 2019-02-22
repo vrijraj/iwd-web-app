@@ -4,8 +4,10 @@
         "location":"Jalandhar",
         "designation":"Front End Developer",
         "company": "Qart",
-        "about":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate culpa repellendus vitae illo consequuntur soluta odit ratione, aut voluptatum debitis laudantium sed fugiat ullam sequi, provident iusto voluptates architecto quae?",
+        "about":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate culpa repellendus vitae illo consequuntur soluta odit ratione, aut voluptatum debitis laudantium sed fugiat ullam sequi, provident iusto voluptates architecto quae",
         "twitter":"https://twitter.com/vrijrajsingh",
+        "linkedin":"https://www.linkedin.com/in/vrijraj",
+        "github":"https://github.com/Vrijraj",
         "profileImage":"https://gdgjalandhar.com/assets/img/team/vrij.jpg",
         "status":""
     },
