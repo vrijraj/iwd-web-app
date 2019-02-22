@@ -2,11 +2,11 @@
     {
         "name":"GDG",
         "link":"https://developers.google.com/groups",
-        "img":"../assets/imgs/partners/wtm.png"
+        "img":"gdg.png"
     },
     {
         "name":"WomenTechmakers",
         "link":"https://www.womentechmakers.com/",
-        "img":"../assets/imgs/partners/wtm.png"
+        "img":"wtm.png"
     }
 ]

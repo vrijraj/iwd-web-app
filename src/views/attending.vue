@@ -56,8 +56,7 @@ export default {
             show:false,
             imgPath:{
                 src: require('@/assets/imgs/bg.jpg')
-                // "../assets/imgs/bg.jpg"
-                }
+            }
         }
     },
     created(){

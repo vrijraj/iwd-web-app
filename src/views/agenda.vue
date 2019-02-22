@@ -42,7 +42,7 @@
                                                     <v-icon small left>{{showIcon(item.track)}}</v-icon>
                                                     {{item.track}}
                                                 </v-chip>
-                                                <div class="google-font">{{item.des}}</div>
+                                                <div class="google-font" style="font-size:110%">{{item.des}}</div>
                                             </div>
                                             </v-card-title>
                                         </v-card>

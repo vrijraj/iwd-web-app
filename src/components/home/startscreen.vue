@@ -2,6 +2,11 @@
     <v-container fluid >
         <v-layout wrap align-center justify-center row fill-height>
             <v-flex xs12 md7>
+                <!-- <svg aria-hidden="true" width="80px" height="100px" viewBox="0 0 185 247" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 243.903V0h182.26c2.326 0 3.59 3.074 2.091 5.084L4.826 245.894C3.182 248.1 0 246.787 0 243.904" fill="#62CAE3" fill-rule="evenodd"></path>
+                </svg> -->
+                <!-- <br> -->
+                
                 <img :src="data.eventLogo" class="" width="60vh" alt="" srcset="">
                 <h1 class="google-font mt-0" style="color:#616161">{{data.eventName}}</h1>
 
@@ -20,7 +25,8 @@
                 <v-btn :href="data.eventMeetupLink" target="_blank" round color="cyan" style="text-transform: capitalize;" flat  class="ml-0" dark>Meetup</v-btn>
             </v-flex>
 
-            <v-flex xs12 md5 class="hidden-sm-and-down">
+            <v-flex xs12 md5 class="hidden-sm-and-down pl-5">
+                
                 <img src="@/assets/imgs/home2.jpg" width="100%" alt="" srcset="">
             </v-flex>
         </v-layout>

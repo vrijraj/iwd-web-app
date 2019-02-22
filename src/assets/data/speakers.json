@@ -8,7 +8,7 @@
         "twitter":"https://twitter.com/vrijrajsingh",
         "linkedin":"https://www.linkedin.com/in/vrijraj",
         "github":"https://github.com/Vrijraj",
-        "profileImage":"https://gdgjalandhar.com/assets/img/team/vrij.jpg",
+        "profileImage":"",
         "status":""
     },
     {
@@ -18,7 +18,7 @@
         "company": "IB Hubs",
         "about":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate culpa repellendus vitae illo consequuntur soluta odit ratione, aut voluptatum debitis laudantium sed fugiat ullam sequi, provident iusto voluptates architecto quae?",
         "twitter":"",
-        "profileImage":"https://gdgjalandhar.com/assets/img/team/vrij.jpg",
+        "profileImage":"",
         "status":""
     },
     {
@@ -28,7 +28,7 @@
         "company": "NickelFox",
         "about":"",
         "twitter":"",
-        "profileImage":"https://gdgjalandhar.com/assets/img/team/vrij.jpg",
+        "profileImage":"",
         "status":""
     },
     {
@@ -38,7 +38,7 @@
         "company": "Infosys",
         "about":"",
         "twitter":"",
-        "profileImage":"https://gdgjalandhar.com/assets/img/team/vrij.jpg",
+        "profileImage":"",
         "status":""
     }
 ]
