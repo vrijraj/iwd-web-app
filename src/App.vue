@@ -32,8 +32,6 @@
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       color="white"
       app
-      flat
-      class="elevation-1"
       scroll-off-screen
       fixed
       height="55px"

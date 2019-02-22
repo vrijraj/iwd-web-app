@@ -1,11 +1,11 @@
 <template>
     <v-container fluid>
         <v-layout wrap class="pa-0" align-center justify-center row fill-height>
-            <v-flex xs12 md10 lg10>
-                <h2 class="google-font mt-2" >Frequently Asked Questions</h2>
+            <v-flex xs12>
+                <p class="google-font mt-2 mb-0" style="font-size:200%">Frequently Asked Questions</p> 
             </v-flex>
             
-            <v-flex xs12 md10 lg10 class="mt-3">
+            <v-flex xs12 class="mt-3">
                 <v-expansion-panel>
                     <v-expansion-panel-content
                     v-for="item in contents"
