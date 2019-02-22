@@ -1,23 +1,39 @@
 <template>
     <v-container fluid >
         <v-layout wrap align-center justify-center row fill-height>
-            <v-flex xs12 md6>
-                <img src="https://www.womentechmakers.com/static/images/wtm-icon@2x.png" class="" width="60vh" alt="" srcset="">
-                <h1 class="google-font mt-1" style="color:#4a4a4a">International Women's Day 2019</h1>
-                <p class="mt-3 google-font subheading">International Women's Day (IWD) is marked on March 8th every year. In different regions, the focus of celebrations ranges from general respect and appreciation for women to a celebration of women's economic, political, and social achievements.</p>
+            <v-flex xs12 md7>
+                <img :src="data.eventLogo" class="" width="60vh" alt="" srcset="">
+                <h1 class="google-font mt-0" style="color:#616161">{{data.eventName}}</h1>
 
-                <p class="grey--text google-font mb-0">31st March | 9 am to 5 pm | Venue</p>
-                <p class="grey--text google-font mt-1">#GDGJalandhar &nbsp; #WTMJalandhar &nbsp;  #GDG  &nbsp; #WTM &nbsp;#IWD19</p>
-                <v-btn round color="indigo" class="ml-0" dark>Request for an iNVITAION</v-btn>
-                <v-btn round color="primary" outline  class="ml-0" dark>Meetup</v-btn>
+                <p class="google-font mb-0" style="font-size:250%;color:#17ACB6;font-weight:700">{{data.themeTitle}}</p>
+
+                <p class="mt-2 google-font" style="font-size:120%">{{data.eventDes}}</p>
+
+                <p class="grey--text google-font mb-0" style="font-size:120%">{{data.eventDate}} | {{data.eventTime}} | {{data.eventVenue}}</p>
+                <p class="grey--text google-font mt-1" style="font-size:120%">
+                    <span v-for="(hs,i) in data.hashTag" :key="i">
+                        {{hs.name}} &nbsp;
+                    </span>
+                </p>
+                <v-btn href="#" round color="blue" style="text-transform: capitalize;"   class="ml-0" dark>Request for an Invatation</v-btn>
+
+                <v-btn :href="data.eventMeetupLink" target="_blank" round color="cyan" style="text-transform: capitalize;" flat  class="ml-0" dark>Meetup</v-btn>
             </v-flex>
 
-            <v-flex xs12 md6>
-                <!-- <img src="assets/img/bg.jpg" width="100%" alt="" srcset="">
-                <p class="google-font">
-                    Women Techmakers is a program created by Google to celebrate International Women's Day and to highlight the talent of women in technology. In 2019, we’re organizing the fourth edition in Montreal as part of the special event The Women Techmakers Global Event Series Celebrating International Women’s Day (WTM IWD). This program has been in over 200 global events and seen across 52 countries. The main focus of this community-building initiative is to promote talented and passionate women, increase the visibility of the Montreal technology community and empower women in technology.
-                </p>  -->
+            <v-flex xs12 md5 class="hidden-sm-and-down">
+                <img src="@/assets/imgs/home2.jpg" width="100%" alt="" srcset="">
             </v-flex>
         </v-layout>
     </v-container>
 </template>
+
+<script>
+import homeData from '@/assets/data/home.json'
+export default {
+    data() {
+        return {
+            data: homeData
+        }
+    },
+}
+</script>

@@ -33,7 +33,7 @@
       color="white"
       app
       flat
-      class="elevation-3"
+      class="elevation-1"
       scroll-off-screen
       fixed
       height="55px"

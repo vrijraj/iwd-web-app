@@ -1,35 +1,47 @@
 <template>
-    <v-container fluid class="elevation-0 mt-3 indigo">
+    <v-container fluid class="elevation-0 mt-3" style="border-radius:8px;border-color:#e0e0e0;border-width: 1px; border-style: solid;">
         <v-layout wrap align-center justify-center row fill-height class="pa-3">
-            <v-flex xs12 md4 class="white--text">
-                <h2 class="display-1">More Women in Technology</h2>
-                <p class="google-font mt-2">Women Techmakers is a program created by Google to celebrate International Women's Day and to highlight the talent of women in technology. In 2019, we’re organizing the fourth edition in Montreal as part of the special event The Women Techmakers Global Event Series Celebrating International Women’s Day (WTM IWD). </p>
+            <v-flex xs12 md4 >
+                <p class="google-font mb-0">Explore themes</p>
+                <h2 class="google-font mt-0" style="font-size:200%;color:#17ACB6">{{data.themeTitle}}</h2>
+                <p class="google-font mt-2" style="font-size:120%">{{data.aboutWTMProgram}}</p>
             </v-flex>
-            <v-flex xs12 md2 class="text-xs-center white--text pa-2">
-                <v-icon large color="white">favorite</v-icon>
-                <h1 class="google-font">Sessions</h1>
-                <p class="google-font">3 parallel tracks, dedicated to Android, Web and Cloud technologies</p>
-            </v-flex>
+            <v-flex xs12 md8>
+                <v-layout  wrap justify-center row fill-height>
+                    <v-flex xs6 class="pa-2">
+                        <span class="pa-2 google-font" style="border-radius:8px;background-color:#d2e3fc;color:#174ea6;font-size:150%">{{data.stats[0].name}}</span>
 
-            <v-flex xs12 md2 class="text-xs-center white--text pa-2">
-                <v-icon large color="white">favorite</v-icon>
-                <h1 class="google-font">Showcases</h1>
-                <p class="google-font">Demo zone with the latest of Google tech: Actions by Women in tech all in one place</p>
-            </v-flex>
+                        <p class="google-font mt-3" style="font-size:120%">{{data.stats[0].des}}</p>
+                    </v-flex>
+                    <v-flex xs6 class="pa-2">
+                        <span class="pa-2 google-font" style="border-radius:8px;background-color:#fef7e0;color:#b06000;font-size:150%">{{data.stats[1].name}}</span>
 
-            <v-flex xs12 md2 class="text-xs-center white--text pa-2">
-                <v-icon large color="white">favorite</v-icon>
-                <h1 class="google-font">Networking</h1>
-                <p class="google-font">Work hard and enjoy IWD19 is the best place to meet new people</p>
-            </v-flex>
+                        <p class="google-font mt-3" style="font-size:120%">{{data.stats[1].des}}</p>
+                    </v-flex>
+                    <v-flex xs6 class="pa-2">
+                        <span class="pa-2 google-font" style="border-radius:8px;background-color:#fce8e6;color:#b31412;font-size:150%">{{data.stats[2].name}}</span>
 
-            <v-flex xs12 md2 class="text-xs-center white--text pa-2">
-                <v-icon large color="white">favorite</v-icon>
-                <h1 class="google-font">Workshop</h1>
-                <p class="google-font">2 workshops to get your hands dirty and create a working prototype right during the conference</p>
-            </v-flex>
+                        <p class="google-font mt-3" style="font-size:120%">{{data.stats[2].des}}</p>
+                    </v-flex>
+                    <v-flex xs6 class="pa-2">
+                        <span class="pa-2 google-font" style="border-radius:8px;background-color:#ceead6;color:#0d652d;font-size:150%">{{data.stats[3].name}}</span>
 
-           
+                        <p class="google-font mt-3" style="font-size:120%">{{data.stats[3].des}}</p>
+                    </v-flex>
+                    
+                </v-layout>
+            </v-flex>
         </v-layout>
     </v-container>
 </template>
+
+<script>
+import homeData from '@/assets/data/home.json'
+export default {
+    data() {
+        return {
+            data: homeData
+        }
+    },
+}
+</script>

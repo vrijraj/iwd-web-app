@@ -10,17 +10,25 @@
             <v-flex xs12 md10 lg10>     
                 <v-layout wrap row fill-height class="pa-0">
                     <v-flex xs6 sm2 md2 lg2 v-for="(item) in speakersData" :key="item.name" class="text-xs-center py-4" style="text-align:center">
-                        <v-avatar
-                            size="130"
-                            >
+                        <v-avatar size="130">
                             <img :src=item.profileImage alt="avatar">
                         </v-avatar>
                         <p class="mt-3 mb-0 google-font" style="font-size:140%">{{item.name}}</p>
                         <p class="mt-1 mb-0 google-font">{{item.company}}</p>
 
-                        <v-btn class="mt-0"  icon v-if="item.twitter.length>0" :href="item.twitter" target="_blank">
-                            <v-icon color="blue">public</v-icon>
+                        <v-btn class="mt-0" icon v-if="(item.twitter).length>0" :href="item.twitter" target="_blank">
+                            <i class="fab fa-twitter" style="color:#1E88E5"></i>
                         </v-btn>
+                        <!-- {{item.linkedin}}
+                        {{item.github}} -->
+
+                        <!-- <v-btn class="mt-0" icon v-if="item.linkedin.length>0" :href="item.linkedin" target="_blank">
+                            <i class="fab fa-linkedin-in" style="color:#1E88E5"></i>
+                        </v-btn>
+
+                        <v-btn class="mt-0" icon v-if="item.github.length>0" :href="item.github" target="_blank">
+                            <i class="fab fa-github" style="color:#1E88E5"></i>
+                        </v-btn> -->
                       
                     </v-flex>
                 </v-layout>
