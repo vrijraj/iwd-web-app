@@ -1,16 +1,8 @@
 <template>
     <v-footer class="pa-3 hidden-md-and-down">
         <v-spacer></v-spacer>
-        <div>&copy; Designed & Developed By <a href="https://gdgjalandhar.com" target="_blank">GDG Jalandhar</a></div>
+        <div>&copy; Designed & Developed By <a style="color:#1565C0;text-decoration: none;" href="https://gdgjalandhar.com" target="_blank">GDG Jalandhar</a></div>
     </v-footer>
-    <!-- <v-container fluid class="mt-5 text-xs-center hidden-md-and-down">
-        <v-layout wrap align-center justify-center row fill-height>
-            <v-flex xs12 md12>
-                <v-divider></v-divider>
-                <p class="mt-3 google-font subheading">Designed & Developed By <a href="https://gdgjalandhar.com" target="_blank">GDG Jalandhar</a></p>
-            </v-flex>
-        </v-layout>
-    </v-container> -->
 </template>
 
 <script>

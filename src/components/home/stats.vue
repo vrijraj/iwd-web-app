@@ -11,22 +11,22 @@
                     <v-flex xs6 class="pa-2">
                         <span class="pa-2 google-font" style="border-radius:8px;background-color:#d2e3fc;color:#174ea6;font-size:150%">{{data.stats[0].name}}</span>
 
-                        <p class="google-font mt-3" style="font-size:120%">{{data.stats[0].des}}</p>
+                        <p class="google-font mt-3" style="font-size:120%">{{data.stats[0].des.substring(0,200)}}</p>
                     </v-flex>
                     <v-flex xs6 class="pa-2">
                         <span class="pa-2 google-font" style="border-radius:8px;background-color:#fef7e0;color:#b06000;font-size:150%">{{data.stats[1].name}}</span>
 
-                        <p class="google-font mt-3" style="font-size:120%">{{data.stats[1].des}}</p>
+                        <p class="google-font mt-3" style="font-size:120%">{{data.stats[1].des.substring(0,200)}}</p>
                     </v-flex>
                     <v-flex xs6 class="pa-2">
                         <span class="pa-2 google-font" style="border-radius:8px;background-color:#fce8e6;color:#b31412;font-size:150%">{{data.stats[2].name}}</span>
 
-                        <p class="google-font mt-3" style="font-size:120%">{{data.stats[2].des}}</p>
+                        <p class="google-font mt-3" style="font-size:120%">{{data.stats[2].des.substring(0,200)}}</p>
                     </v-flex>
                     <v-flex xs6 class="pa-2">
                         <span class="pa-2 google-font" style="border-radius:8px;background-color:#ceead6;color:#0d652d;font-size:150%">{{data.stats[3].name}}</span>
 
-                        <p class="google-font mt-3" style="font-size:120%">{{data.stats[3].des}}</p>
+                        <p class="google-font mt-3" style="font-size:120%">{{data.stats[3].des.substring(0,200)}}</p>
                     </v-flex>
                     
                 </v-layout>

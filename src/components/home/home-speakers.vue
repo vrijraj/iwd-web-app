@@ -2,7 +2,7 @@
     <v-container fluid class="mt-4">
         <v-layout wrap align-center justify-center row fill-height>
             <v-flex xs12 md12>
-                <h1 class="google-font mt-2" style="color:#37474F">Our lineup of big thinkers and even bigger doers</h1>
+                <p class="google-font mt-2 mb-0" style="color:#37474F;font-size:200%">Our lineup of big thinkers and even bigger doers</p>
                 <p class="mt-0 google-font subheading">Get ready to be inspired by speakers who are building a cloud full of opportunity with our partners and customers. Stay tuned as we add more dynamic speakers to our lineup..
 
                     <router-link class="mt-0" to="speakers" style="text-decoration: none;">See More</router-link>
@@ -12,7 +12,22 @@
             <v-layout wrap row>
                 <v-flex xs6 sm2 md2 lg2 v-for="item in speakersData.slice(0, 4)" :key="item.name" class="text-xs-center pa-2" style="text-align:center">
                     <v-avatar size="120">
-                        <img :src="getImgUrl(item.profileImage)" alt="avatar">
+                        <v-img
+                            :src="getImgUrl(item.profileImage)"
+                            :lazy-src="getImgUrl(item.profileImage)">
+
+                            <v-layout
+                                slot="placeholder"
+                                fill-height
+                                align-center
+                                justify-center
+                                ma-0
+                            >
+                                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                            </v-layout>
+                         
+                        </v-img>
+                        <!-- <img :src="getImgUrl(item.profileImage)" alt="avatar"> -->
                     </v-avatar>
                     <p class="mt-3 mb-0 google-font" style="font-size:140%">{{item.name}}</p>
                     <p class="mt-1 mb-0 google-font">{{item.company}}</p>

@@ -66,6 +66,17 @@
         <v-icon>group</v-icon>
       </v-btn>
 
+      <v-btn
+        color="white"
+        flat
+        value="Teams"
+        router
+        to="/teams"
+      >
+        <span>Teams</span>
+        <v-icon>group</v-icon>
+      </v-btn>
+
     </v-bottom-nav>
   </v-card>
 </template>
