@@ -2,12 +2,22 @@
     <v-container fluid >
         <v-layout wrap align-center justify-center row fill-height>
             <v-flex xs12 md7>
-                <!-- <svg aria-hidden="true" width="80px" height="100px" viewBox="0 0 185 247" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 243.903V0h182.26c2.326 0 3.59 3.074 2.091 5.084L4.826 245.894C3.182 248.1 0 246.787 0 243.904" fill="#62CAE3" fill-rule="evenodd"></path>
-                </svg> -->
-                <!-- <br> -->
+
+                <v-img
+                    :src="data.eventLogo"
+                    :lazy-src="data.eventLogo"
+                    width="5vh">
+                    <v-layout
+                        slot="placeholder"
+                        fill-height
+                        align-center
+                        justify-center
+                        ma-0
+                    >
+                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                </v-img>
                 
-                <img :src="data.eventLogo" class="" width="60vh" alt="" srcset="">
                 <h1 class="google-font mt-0" style="color:#616161">{{data.eventName}}</h1>
 
                 <p class="google-font mb-0" style="font-size:250%;color:#17ACB6;font-weight:700">{{data.themeTitle}}</p>
@@ -26,8 +36,19 @@
             </v-flex>
 
             <v-flex xs12 md5 class="hidden-sm-and-down pl-5">
-                
-                <img src="@/assets/imgs/home2.jpg" width="100%" alt="" srcset="">
+                <v-img
+                    :src="require('@/assets/imgs/home2.jpg')"
+                    :lazy-src="require('@/assets/imgs/home2.jpg')">
+                    <v-layout
+                        slot="placeholder"
+                        fill-height
+                        align-center
+                        justify-center
+                        ma-0
+                    >
+                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                </v-img>
             </v-flex>
         </v-layout>
     </v-container>

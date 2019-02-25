@@ -2,7 +2,7 @@
     <v-container fluid class="mt-3">
         <v-layout wrap row>
             <v-flex xs12 md12>
-                <h1 class="google-font mt-2" style="color:#37474F">Featured Sessions & Workshop from:</h1>
+                <p class="google-font mt-2" style="color:#37474F;font-size:200%">Featured Sessions & Workshop from:</p>
             </v-flex>
             
             <!-- class="elevation-0" style="border-radius:8px;border-color:#e0e0e0;border-width: 1px; border-style: solid;" -->

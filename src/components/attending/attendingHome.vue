@@ -2,7 +2,20 @@
     <v-container fluid class="mt-2 grey lighten-5" style="border-radius:8px;border-color:#e0e0e0;border-width: 1px; border-style: solid;">
         <v-layout wrap align-center justify-center row fill-height>
             <v-flex xs12 md3 class="mb-3">
-                <img src="@/assets/imgs/svg/attendingfront.svg" width="80%" alt="" srcset="">
+                <v-img
+                    :src="require('@/assets/imgs/svg/attendingfront.svg')"
+                    :lazy-src="require('@/assets/imgs/svg/attendingfront.svg')"
+                    width="80%">
+                    <v-layout
+                        slot="placeholder"
+                        fill-height
+                        align-center
+                        justify-center
+                        ma-0
+                    >
+                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+                </v-img>
             </v-flex>
 
             <v-flex xs12 md9>
@@ -16,14 +29,6 @@
             </v-flex>               
         </v-layout>
 
-        <!-- <v-layout wrap align-center justify-center row fill-height>
-            <v-flex xs12 md3>
-                <img src="@/assets/imgs/svg/attending.svg" width="100%" alt="" srcset="">
-            </v-flex>
-            <v-flex xs12 md9>
-                <p class="google-font" style="font-size:200%">Join us at the {{data.eventVenue}}, on {{data.eventDate}}.</p>   
-            </v-flex>              
-        </v-layout> -->
     </v-container>
 </template>
 

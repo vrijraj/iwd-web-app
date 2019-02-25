@@ -37,7 +37,7 @@
                                         <v-card class="elevation-0" style="border: 1px solid #f5f6f7;min-height:280px;">
                                             <v-card-title primary-title>
                                             <div>
-                                                <h4 class="mb-0 google-font" style="font-size:130%;color:#424242">{{item.title}}</h4>
+                                                <p class="mb-0 google-font" style="font-size:130%;color:#424242">{{item.title}}</p>
                                                 <v-chip v-if="item.track.length>0" label small class="ma-0 my-1" outline :color="showColor(item.track)">
                                                     <v-icon small left>{{showIcon(item.track)}}</v-icon>
                                                     {{item.track}}
