@@ -50,7 +50,12 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: () => import('./views/About.vue')
-    }
+    },
+    {
+      path: '/registration',
+      name: 'registration',
+      component: () => import('./views/registration.vue')
+    },
   ],
   
 })

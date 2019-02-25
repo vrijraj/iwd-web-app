@@ -2,8 +2,16 @@
     <v-slide-y-reverse-transition>
     <v-container fluid class="mt-3" v-show="show">
         <v-layout wrap align-center justify-center row fill-height class="pa-3">
+            
+
+            <v-flex xs12 md7 lg7>
+                <span class="pa-2 google-font" style="border-radius:8px;background-color:#E0F2F1;color:#004D40;font-size:150%">Team</span>
+                <p class="google-font mt-2" style="color:#37474F;font-size:150%">Our goal is to organize space to connect the best industry experts with audience to boost development of IT.</p>
+                <p class="mt-0 google-font subheading">Google is known all around the world. Everyone is 'googling', checking on 'maps' and communicating in 'gmail'. For simple users, they are services that just works, but not for us. Developers see much more: APIs, scalability issues, complex technology stacks. And that is what GDG is about.</p>
+            </v-flex>
+
             <v-flex xs12 md3 lg3 class="pa-3">
-                <svg aria-hidden="true" width="80%" height="70%" viewBox="0 0 513 409" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <!-- <svg aria-hidden="true" width="80%" height="70%" viewBox="0 0 513 409" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
                         <path id="svg-GreenTrapezoids-2M07o7c" d="M.066.79h272.606V366H.066z"></path>
                     </defs>
@@ -17,13 +25,7 @@
                         <path d="M78.5 227.549V408.5h289V65.164c0-3.605-3.914-5.845-7.012-4.008L78.5 227.549zm10.402 5.96L357.098 75.253v322.821H88.902V233.51z" fill="#A8DAB5"></path>
                         <path d="M0 409h163.311v-.066H233V4.667c0-3.732-4.157-5.948-7.245-3.864L.019 153.306 0 409zm10.402-10.43l.02-239.714L222.597 15.512v382.992H163.31l-10.403.066H10.403z" fill="#CEEAD6"></path>
                     </g>
-                </svg>
-            </v-flex>
-
-            <v-flex xs12 md7 lg7>
-                <span class="pa-2 google-font" style="border-radius:8px;background-color:#E0F2F1;color:#004D40;font-size:150%">Team</span>
-                <p class="google-font mt-2" style="color:#37474F;font-size:200%">Our goal is to organize space to connect the best industry experts with audience to boost development of IT.</p>
-                <p class="mt-0 google-font subheading">Google is known all around the world. Everyone is 'googling', checking on 'maps' and communicating in 'gmail'. For simple users, they are services that just works, but not for us. Developers see much more: APIs, scalability issues, complex technology stacks. And that is what GDG is about.</p>
+                </svg> -->
             </v-flex>
 
 
