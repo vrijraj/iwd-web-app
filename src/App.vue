@@ -54,6 +54,16 @@
         <!-- <v-icon small left>{{item.icon}}</v-icon> -->
         {{item.title}}
       </v-btn>
+
+      <v-btn class="mx-1 hidden-sm-and-down google-font" 
+        color="info"
+        router  
+        style="text-transform: capitalize;"    
+        to="/registration">
+        <!-- <v-icon small left>{{item.icon}}</v-icon> -->
+        Registration
+      </v-btn>
+
       <!-- <v-btn
         v-for="(item, i) in items"
         :key="i"
