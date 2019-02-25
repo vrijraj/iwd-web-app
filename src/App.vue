@@ -41,7 +41,7 @@
         <span>
           
         </span>
-        <span class="google-font">IWD19 Jalandhar</span>
+        <span class="google-font">{{data.navTitle}}</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn class="mx-1 hidden-sm-and-down google-font" 
@@ -51,26 +51,9 @@
         router  
         style="text-transform: capitalize;"    
         :to="item.route">
-        <!-- <v-icon small left>{{item.icon}}</v-icon> -->
         {{item.title}}
       </v-btn>
-      <!-- <v-btn
-        v-for="(item, i) in items"
-        :key="i"
-        :to="item.route"
-        class="ml-0 hidden-sm-and-down"
-        flat
-        @click="onClick($event, item)"
-      >
-        {{ item.itile }}
-      </v-btn> -->
 
-       <!-- <v-toolbar-items class="hidden-sm-and-down google-font ml-3">
-        <v-btn flat route to="/home">Home</v-btn>
-        <v-btn flat route to="/attending">Attending</v-btn>
-        <v-btn flat route to="/sessions">Sessions</v-btn>
-        <v-btn flat route to="/speakers">Speakers</v-btn>
-      </v-toolbar-items> -->
     </v-toolbar>
 
     <v-content transition="slide-y-transition">
@@ -86,6 +69,7 @@
 
 import bottomNavbar from './components/bottom-footer'
 import cofooter from './components/footer'
+import homeData from '@/assets/data/home.json'
 
 export default {
   name: 'App',
@@ -95,6 +79,7 @@ export default {
   },
   data: () => ({
       drawer: false,
+      data:homeData,
       items: [
             { title: 'Home', icon: 'dashboard', route:"/home" },
             { title: 'Attending', icon: 'rounded_corner', route:"/attending" },
