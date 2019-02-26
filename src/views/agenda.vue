@@ -18,7 +18,7 @@
             </v-flex>
 
             <v-flex xs12 md9 sm10 lg10 class="pa-0 mt-5 hidden-sm-and-down">
-                <span class="pa-2 google-font" style="border-radius:8px;background-color:#EDE7F6;color:#4527A0;font-size:150%">Agenda</span>
+                <span class="pa-2 google-font" style="border-radius:8px;background-color:#E0F2F1;color:#2aa1af;font-size:150%">Agenda</span>
                 <br><br>
                 <p class="google-font" style="font-size:120%">Hone your skills. Ask technical questions. Get inspired. This year’s program is packed with breakouts, keynotes, spotlights, panels, and bootcamps.
                 <br>
@@ -29,7 +29,7 @@
             <v-flex xs12 md9 sm10 lg10 class="pa-0 elevation-2">
                 <v-tabs
                     v-model="active"
-                    color="deep-purple"
+                    color="#2aa1af"
                     dark
                     slider-color="yellow">
 

@@ -2,8 +2,8 @@
     <v-container fluid class="mt-3">
         <v-layout wrap align-center justify-center row fill-height>
             <v-flex xs12 md12>
-                <p class="google-font mt-2 mb-0" style="font-size:150%;color:#37474F;" >Partners</p>
-                <p class="google-font mt-0 mb-0" style="font-size:120%">A very big thank you to all our partners for their continued partnership.</p>
+                <p class="google-font mt-2 mb-0" style="font-size:160%;color:#37474F;" >Partners</p>
+                <p class="google-font mt-1 mb-0" style="font-size:120%">A very big thank you to all our partners for their continued partnership.</p>
                 <p class="google-font mt-0" style="font-size:120%">If you’re interested in being showcased throughout <b>{{homeData.eventName}}</b>, contact <a style="color:#1565C0;text-decoration: none;" :href="`mailto:${homeData.email}`">{{homeData.email}}</a> to discuss sponsorship opportunities.</p>
             </v-flex>
 

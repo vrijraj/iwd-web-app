@@ -2,7 +2,7 @@
     <v-container fluid>
         <v-layout wrap class="pa-0" align-center justify-center row fill-height>
             <v-flex xs12>
-                <p class="google-font mt-2 mb-0" style="font-size:200%">Frequently Asked Questions</p> 
+                <p class="google-font mt-2 mb-0" style="font-size:150%">Frequently Asked Questions</p> 
             </v-flex>
             
             <v-flex xs12 class="mt-3">

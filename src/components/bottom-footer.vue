@@ -5,23 +5,11 @@
       :value="true"
       app
       dark
-      color="indigo"
+      color="#10455B"
       class="elevation-2"
       
     >
-      <!-- <v-btn
-        color="white"
-        flat
-        v-for="item in items"
-        :key="item.route"
-        value="item.title"
-        router
-        :to="item.route"
-      >
-        <span>{{item.title}}</span>
-        <v-icon>{{item.icon}}</v-icon>
-      </v-btn> -->
-
+  
       <v-btn
         color="white"
         flat
@@ -74,7 +62,7 @@
         to="/teams"
       >
         <span>Teams</span>
-        <v-icon>group</v-icon>
+        <v-icon>person</v-icon>
       </v-btn>
 
     </v-bottom-nav>
