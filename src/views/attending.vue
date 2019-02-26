@@ -1,12 +1,12 @@
 <template>
     <v-slide-y-reverse-transition>
-        <v-container fluid v-show="show">
+        <v-container fluid v-show="show" class="">
             <v-layout wrap align-center justify-center row>
                 <v-flex xs12 md10 lg10>
                     <attnedingHome/>
                     <attnedingExplore/>
                     <faq/>  
-                    <!-- <follow/>       -->
+                    <!-- <follow/>  -->
                 </v-flex>
             </v-layout>
         </v-container>
