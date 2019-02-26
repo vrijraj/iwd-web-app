@@ -9,6 +9,48 @@
       disable-route-watcher
       class="hidden-md-and-up"
     >
+      <v-flex xs12 class="pl-3 pt-5">
+        <v-img
+              :src="data.eventLogo"
+              :lazy-src="data.eventLogo"
+              width="5vh">
+              <v-layout
+                  slot="placeholder"
+                  fill-height
+                  align-center
+                  justify-center
+                  ma-0
+              >
+                  <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+              </v-layout>
+        </v-img>
+        <p class="google-font mt-2">{{ data.navTitle }}</p>
+        
+      </v-flex>
+      <!-- <v-toolbar flat>
+        <v-list>
+          <v-list-tile>
+            <v-list-tile-title class="title google-font py-5">
+              <v-img
+                    :src="data.eventLogo"
+                    :lazy-src="data.eventLogo"
+                    width="5vh">
+                    <v-layout
+                        slot="placeholder"
+                        fill-height
+                        align-center
+                        justify-center
+                        ma-0
+                    >
+                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                    </v-layout>
+              </v-img>
+              {{ data.navTitle }}
+            </v-list-tile-title>
+          </v-list-tile>
+        </v-list>
+      </v-toolbar> -->
+
       <v-list class="pt-0" dense>
         <v-divider></v-divider>
         <v-list-tile
@@ -80,7 +122,7 @@ export default {
             { title: 'Attending', icon: 'rounded_corner', route:"/attending" },
             { title: 'Agenda', icon: 'toc', route:"/agenda" },
             { title: 'Speakers', icon: 'group', route:"/speakers" },
-            { title: 'Teams', icon: 'group', route:"/teams" }
+            { title: 'Teams', icon: 'person', route:"/teams" }
         ],
     }),
     methods:{

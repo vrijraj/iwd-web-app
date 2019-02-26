@@ -20,7 +20,7 @@
 
             <v-flex xs12 md9>
                 <span class="pa-2 google-font" style="border-radius:8px;background-color:#E3F2FD;color:#0D47A1;font-size:150%">Attending</span>
-                <p class="google-font mt-2 mb-0" style="font-size:200%">Join us at the {{data.eventVenue}}, on {{data.eventDate}}.</p>   
+                <p class="google-font mt-2 mb-0" style="font-size:150%">Join us at the {{data.eventVenue}}, on {{data.eventDate}}.</p>   
                 
                 <p class="google-font mt-0" style="font-size:120%">On {{data.eventDate}} we’ll be taking technical sessions, hands-on demos, workshops, and some fun activities.</p>
 

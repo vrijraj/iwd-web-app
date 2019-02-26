@@ -2,7 +2,7 @@
     <v-container fluid class="mt-4" >
         <v-layout wrap row>
             <v-flex xs12 md3 class="mb-3">
-                <p class="google-font mt-2 mb-0" style="font-size:200%">What to expect & explore</p>   
+                <p class="google-font mt-2 mb-0" style="font-size:150%">What to expect & explore</p>   
                 <p class="google-font" style="font-size:120%">{{data.eventName}} features hands-on learning, latest developer products, and technical talks & workshops given by the engineers who are developing our latest APIs and tools — plus a few surprises along the way.</p>
             </v-flex>
 

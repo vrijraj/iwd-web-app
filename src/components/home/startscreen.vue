@@ -30,7 +30,7 @@
                         {{hs.name}} &nbsp;
                     </span>
                 </p>
-                <v-btn :href="data.registrationLink" target="_blank" class="ma-0 google-font" color="cyan" style="text-transform: capitalize;border-radius:8px;color:white">Request for an Invitation</v-btn>
+                <v-btn :href="data.registrationLink" target="_blank" class="ma-0 google-font" color="#2aa1af" style="text-transform: capitalize;border-radius:8px;color:white">Request for an Invitation</v-btn>
                 &nbsp;
                 <v-btn :href="data.eventMeetupLink" target="_blank" round color="pink" style="text-transform: capitalize;border-radius:8px" flat  class="ml-0" dark>Meetup</v-btn>
             </v-flex>
