@@ -46,11 +46,6 @@ export default new Router({
       name: 'teams',
       component: () => import('./views/teams.vue')
     },
-    {
-      path: '/about',
-      name: 'about',
-      component: () => import('./views/About.vue')
-    },
 
   ],
   

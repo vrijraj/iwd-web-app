@@ -1,7 +1,7 @@
 <template>
     <v-slide-y-reverse-transition>
-    <v-container fluid class="pa-0"  v-show="show">
-        <v-layout wrap align-center justify-center row>
+    <v-container class="pa-0" fluid v-show="show" style="background-image:url('/../../assets/imgs/svg/a.svg');background-size:920px">
+        <v-layout wrap align-center justify-center row >
 
             <v-flex xs12>
                 <v-img :src="imgPath.src" class="elevation-1 hidden-sm-and-up">
@@ -12,16 +12,25 @@
                         white--text
                         style="background-image: linear-gradient(transparent, #212121);"
                     >
-                        <div class="google-font font-weight-light" style="font-size:200%">Sessions</div>
+                        <div class="google-font font-weight-light" style="font-size:200%">Agenda</div>
                     </v-layout>
                 </v-img>
             </v-flex>
 
-        
-            <v-flex xs12 md9 sm10 lg10 class="pa-0">
+            <v-flex xs12 md9 sm10 lg10 class="pa-0 mt-5 hidden-sm-and-down">
+                <span class="pa-2 google-font" style="border-radius:8px;background-color:#EDE7F6;color:#4527A0;font-size:150%">Agenda</span>
+                <br><br>
+                <p class="google-font" style="font-size:120%">Hone your skills. Ask technical questions. Get inspired. This year’s program is packed with breakouts, keynotes, spotlights, panels, and bootcamps.
+                <br>
+                Check back often as we continue to add new sessions.</p>
+            </v-flex>
+
+        <!-- grey lighten-5 -->
+            <v-flex xs12 md9 sm10 lg10 class="pa-0 elevation-2">
                 <v-tabs
                     v-model="active"
-                    color="grey lighten-5"
+                    color="deep-purple"
+                    dark
                     slider-color="yellow">
 
                     <v-tab ripple style="text-transform: capitalize;" >
@@ -34,7 +43,7 @@
                                 <v-layout justify-start row fill-height wrap>
                                     
                                     <v-flex xs12 sm4 md3 lg3 class="pa-2" v-for="(item,i) in sessions" :key="i">
-                                        <v-card class="elevation-0" style="border: 1px solid #f5f6f7;min-height:280px;">
+                                        <v-card class="elevation-0" style="border: 1px solid #f5f6f7;min-height:280px;border-radius:7px">
                                             <v-card-title primary-title>
                                             <div>
                                                 <p class="mb-0 google-font" style="font-size:130%;color:#424242">{{item.title}}</p>

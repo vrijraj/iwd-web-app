@@ -19,12 +19,13 @@
             </v-flex>
 
             <v-flex xs12 md9>
-                <span class="pa-2 google-font" style="border-radius:8px;background-color:#F3E5F5;color:#7B1FA2;font-size:150%">Attending</span>
+                <span class="pa-2 google-font" style="border-radius:8px;background-color:#E3F2FD;color:#0D47A1;font-size:150%">Attending</span>
                 <p class="google-font mt-2 mb-0" style="font-size:200%">Join us at the {{data.eventVenue}}, on {{data.eventDate}}.</p>   
                 
                 <p class="google-font mt-0" style="font-size:120%">On {{data.eventDate}} we’ll be taking technical sessions, hands-on demos, workshops, and some fun activities.</p>
 
-                <v-btn outline :href="data.registrationLink" target="_blank" class="ma-0 google-font" color="purple darken-2" style="text-transform: capitalize;border-radius:8px">Request for an Invitation</v-btn>
+                <v-btn outline :href="data.registrationLink" target="_blank" class="ma-0 google-font" color="blue" style="text-transform: capitalize;border-radius:8px">Request for an Invitation</v-btn>
+
                 <v-btn :href="data.eventMeetupLink" target="_blank" color="red" style="text-transform: capitalize;border-radius:8px" flat  class="ml-2 google-font" dark>Meetup</v-btn>
             </v-flex>               
         </v-layout>

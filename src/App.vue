@@ -1,6 +1,5 @@
 <template>
   <v-app class="white">
-
     <v-navigation-drawer
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
@@ -8,7 +7,7 @@
       app
       disable-resize-watcher
       disable-route-watcher
-      class="hidden-sm-and-up"
+      class="hidden-md-and-up"
     >
       <v-list class="pt-0" dense>
         <v-divider></v-divider>
@@ -36,17 +35,13 @@
       fixed
       height="55px"
     >
-      <v-toolbar-side-icon class="hidden-sm-and-up" @click.stop="drawer =!drawer"></v-toolbar-side-icon>
+      <v-toolbar-side-icon class="hidden-md-and-up" @click.stop="drawer =!drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="ml-0 pl-1 mr-1">   
-        <span>
-          
-        </span>
         <span class="google-font">{{data.navTitle}}</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn class="mx-1 hidden-sm-and-down google-font" 
         flat v-for="(item, i) in items" 
-        
         :key="i" 
         router  
         style="text-transform: capitalize;"    
@@ -56,7 +51,7 @@
 
     </v-toolbar>
 
-    <v-content transition="slide-y-transition">
+    <v-content class="mt-0 mb-0">
       <router-view></router-view>
     </v-content>
 
@@ -89,11 +84,6 @@ export default {
         ],
     }),
     methods:{
-      // onClick (e, item) {
-      //   e.stopPropagation()
-      //   if (item.route || !item.href) return
-      //   this.$vuetify.goTo(item.route)
-      // }
     }
     
 }
