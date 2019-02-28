@@ -26,7 +26,7 @@
                 </v-img>
             </v-flex>
 
-            <v-flex xs12 md10 lg10>     
+            <v-flex xs12 md11 lg11>     
                 <v-layout wrap row fill-height class="pa-0">
                     <v-flex xs6 sm2 md2 lg2 v-for="(item) in speakersData" :key="item.name" class="text-xs-center" style="text-align:center">
                         <div 
