@@ -30,7 +30,7 @@
 
             <v-flex xs12 md10 lg10 class="mt-3">     
                 <v-layout wrap row fill-height class="pa-0">
-                    <v-flex xs6 sm4 md2 lg2 v-for="(item) in speakersData" :key="item.name" class="text-xs-center" >
+                    <v-flex xs6 sm4 md2 lg2 v-for="(item,i) in speakersData" :key="i" class="text-xs-center" >
                         <v-hover>
                         <div 
                             slot-scope="{ hover }"

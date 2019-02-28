@@ -29,7 +29,7 @@
 
             <v-flex xs12 md10 lg10>     
                 <v-layout wrap row fill-height class="pa-0">
-                    <v-flex xs6 sm3 md2 lg2 v-for="(item) in speakersData" :key="item.name" class="text-xs-center" style="text-align:center">
+                    <v-flex xs6 sm3 md2 lg2 v-for="(item,i) in speakersData" :key="i" class="text-xs-center" style="text-align:center">
                         <div 
                             class="text-xs-center ma-1 py-5 my-0" 
                             style="text-align:center;border: 1px solid #e0e0e0;min-height:250px;border-radius:7px">

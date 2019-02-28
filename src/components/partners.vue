@@ -17,7 +17,7 @@
                             <v-container grid-list-sm fluid class="pa-0">
                                 <v-layout row wrap class="ma-1">
                                     <v-flex
-                                        v-for="itemp in partnerData" :key="itemp.name"
+                                        v-for="(itemp,i) in partnerData" :key="i"
                                         xs4
                                         md3
                                         d-flex
