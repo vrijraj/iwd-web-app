@@ -54,7 +54,7 @@
         <v-icon>group</v-icon>
       </v-btn>
 
-      <v-btn
+      <!-- <v-btn
         color="white"
         flat
         value="Teams"
@@ -63,7 +63,7 @@
       >
         <span>Teams</span>
         <v-icon>person</v-icon>
-      </v-btn>
+      </v-btn> -->
 
     </v-bottom-nav>
   </v-card>
