@@ -1,7 +1,7 @@
 <template>
     <v-container fluid class="mt-2 grey lighten-5" style="border-radius:8px;border-color:#e0e0e0;border-width: 1px; border-style: solid;">
         <v-layout wrap align-center justify-center row fill-height>
-            <v-flex xs12 md3 class="mb-3">
+            <v-flex xs12 sm6 md3 class="mb-3">
                 <v-img
                     :src="require('@/assets/imgs/svg/attendingfront.svg')"
                     :lazy-src="require('@/assets/imgs/svg/attendingfront.svg')"
@@ -18,11 +18,11 @@
                 </v-img>
             </v-flex>
 
-            <v-flex xs12 md9>
+            <v-flex xs12 sm6 md9>
                 <span class="pa-2 google-font" style="border-radius:8px;background-color:#E3F2FD;color:#0D47A1;font-size:150%">Attending</span>
                 <p class="google-font mt-2 mb-0" style="font-size:150%">Join us at the {{data.eventVenue}}, on {{data.eventDate}}.</p>   
                 
-                <p class="google-font mt-0" style="font-size:120%">On {{data.eventDate}} we’ll be taking technical sessions, hands-on demos, workshops, and some fun activities.</p>
+                <p class="google-font mt-2" style="font-size:120%">On {{data.eventDate}} we’ll be taking technical sessions, hands-on demos, workshops, and some fun activities.</p>
 
                 <v-btn outline :href="data.registrationLink" target="_blank" class="ma-0 google-font" color="blue" style="text-transform: capitalize;border-radius:8px">Request for an Invitation</v-btn>
 

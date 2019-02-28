@@ -8,7 +8,7 @@
             </v-flex>
 
             <v-flex xs12 md12 class="mt-2">
-                <p class="google-font mt-2" style="font-size:110%">Genral Creator</p>
+                <p class="google-font mt-2" style="font-size:110%">General Creator</p>
                 
 
                 <v-layout >
