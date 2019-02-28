@@ -104,7 +104,7 @@ export default {
             if(pic.length>0){
                 return require('@/assets/imgs/teams/'+pic)
             }else{
-                return require('@/assets/imgs/speakers/avatar.png')
+                return require('@/assets/imgs/avatar.png')
             }
         },
     }
