@@ -1,4 +1,5 @@
 # IWD Web App
+[![Build Status](https://travis-ci.org/Vrijraj/iwd-web-app.svg?branch=master)](https://travis-ci.org/Vrijraj/iwd-web-app)
 
 Standard Web App for IWD Events: GDG Communties. <br>
 [Demo](https://iwd-web-app.firebaseapp.com/) <br>
