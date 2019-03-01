@@ -1,6 +1,6 @@
 <template>
     <v-slide-y-reverse-transition>
-        <v-container fluid v-show="show" class="">
+        <v-container fluid v-show="show" class="mt-3" :style="{'background-image':'url('+require('@/assets/img/svg/a.svg')+')'}" style="background-size:3000px">
             <v-layout wrap align-center justify-center row>
                 <v-flex xs12 md10 lg10>
                     <attnedingHome/>

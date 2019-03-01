@@ -27,29 +27,7 @@
         <p class="google-font mt-2">{{ data.navTitle }}</p>
         
       </v-flex>
-      <!-- <v-toolbar flat>
-        <v-list>
-          <v-list-tile>
-            <v-list-tile-title class="title google-font py-5">
-              <v-img
-                    :src="data.eventLogo"
-                    :lazy-src="data.eventLogo"
-                    width="5vh">
-                    <v-layout
-                        slot="placeholder"
-                        fill-height
-                        align-center
-                        justify-center
-                        ma-0
-                    >
-                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                    </v-layout>
-              </v-img>
-              {{ data.navTitle }}
-            </v-list-tile-title>
-          </v-list-tile>
-        </v-list>
-      </v-toolbar> -->
+
 
       <v-list class="pt-0" dense>
         <v-divider></v-divider>
@@ -93,7 +71,7 @@
 
     </v-toolbar>
 
-    <v-content class="mt-0 mb-0">
+    <v-content class="mt-0 mb-0 pa-0">
       <router-view></router-view>
     </v-content>
 

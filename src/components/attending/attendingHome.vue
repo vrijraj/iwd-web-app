@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid class="mt-2 grey lighten-5" style="border-radius:8px;border-color:#e0e0e0;border-width: 1px; border-style: solid;">
+    <v-container fluid class="mt-5">
         <v-layout wrap align-center justify-center row fill-height>
             <v-flex xs12 sm6 md3 class="mb-3">
                 <v-img
@@ -26,8 +26,9 @@
 
                 <v-btn outline :href="data.registrationLink" target="_blank" class="ma-0 google-font" color="blue" style="text-transform: capitalize;border-radius:8px">Request for an Invitation</v-btn>
 
-                <v-btn :href="data.eventMeetupLink" target="_blank" color="red" style="text-transform: capitalize;border-radius:8px" flat  class="ml-2 google-font" dark>Meetup</v-btn>
-            </v-flex>               
+                <v-btn :href="data.eventMeetupLink" target="_blank" color="red" style="text-transform: capitalize;border-radius:8px" outline  class="ml-2 google-font" dark>Meetup</v-btn>
+            </v-flex>       
+       
         </v-layout>
 
     </v-container>

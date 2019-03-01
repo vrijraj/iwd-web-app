@@ -1,6 +1,6 @@
 <template>
     <v-slide-y-reverse-transition>
-    <v-container class="pa-0" fluid v-show="show" style="background-image:url('/../../assets/imgs/svg/a.svg');background-size:920px">
+    <v-container class="pa-0 mt-5" fluid v-show="show" :style="{'background-image':'url('+require('@/assets/img/svg/a.svg')+')'}" >
         <v-layout wrap align-center justify-center row >
 
             <v-flex xs12>
@@ -18,7 +18,7 @@
             </v-flex>
 
             <v-flex xs12 md9 sm10 lg10 class="pa-0 mt-5 hidden-sm-and-down">
-                <span class="pa-2 google-font" style="border-radius:8px;background-color:#E0F2F1;color:#2aa1af;font-size:150%">Agenda</span>
+                <span class="pa-2 google-font" style="border-radius:8px;background-color:#d1c4e9;color:#311b92;font-size:150%">Agenda</span>
                 <br><br>
                 <p class="google-font" style="font-size:120%">Hone your skills. Ask technical questions. Get inspired. This year’s program is packed with breakouts, keynotes, spotlights, panels, and bootcamps.
                 <br>
@@ -29,7 +29,7 @@
             <v-flex xs12 md9 sm10 lg10 class="pa-0 elevation-2">
                 <v-tabs
                     v-model="active"
-                    color="#2aa1af"
+                    color="indigo"
                     dark
                     slider-color="yellow">
 

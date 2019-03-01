@@ -5,7 +5,7 @@
       :value="true"
       app
       dark
-      color="#4285f4"
+      color="#303F9F"
       class="elevation-2"
       
     >
