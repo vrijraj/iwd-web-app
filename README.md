@@ -2,7 +2,7 @@
 # IWD Web App
 [![Build Status](https://travis-ci.org/Vrijraj/iwd-web-app.svg?branch=master)](https://travis-ci.org/Vrijraj/iwd-web-app) [![Greenkeeper badge](https://badges.greenkeeper.io/Vrijraj/iwd-web-app.svg)](https://greenkeeper.io/)
 
-<img src="https://doc-0s-20-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/075j895fkc2uluqg57qjkv8lsck945n4/1551434400000/03213074667067221613/*/1-KGr4NsiZeWnXtt603rrdzbF8vxdlJEr" width="100%">
+<img src="https://doc-00-20-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/55k7u51rnnaf3131fafn56888h2i6h96/1551434400000/03213074667067221613/*/1l0Wph8d9AU7M38TjW-Dq_mLZigmZjwJi" width="100%">
 
 
 Standard Web App for IWD Events: GDG Communties. <br>
