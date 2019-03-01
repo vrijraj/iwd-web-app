@@ -17,7 +17,7 @@
                             <v-container grid-list-sm fluid class="pa-0">
                                 <v-layout row wrap class="ma-1">
                                     <v-flex
-                                        v-for="itemp in partnerData" :key="itemp.name"
+                                        v-for="(itemp,i) in partnerData" :key="i"
                                         xs4
                                         md3
                                         d-flex
@@ -72,8 +72,8 @@
                                     <v-card flat tile class="d-flex" >
                                         <a href="https://gdgjalandhar.com" target="_blank">
                                         <v-img
-                                            :src="require('../assets/imgs/partners/gdgjalandhar.png')"
-                                            :lazy-src="require('../assets/imgs/partners/gdgjalandhar.png')"
+                                            :src="require('../assets/img/partners/gdgjalandhar.png')"
+                                            :lazy-src="require('../assets/img/partners/gdgjalandhar.png')"
                                             aspect-ratio="2.9"
                                             class="white"
                                         >
@@ -114,7 +114,7 @@ export default {
     },
     methods:{
         getImgUrl(pic) {
-            return require('../assets/imgs/partners/'+pic)
+            return require('../assets/img/partners/'+pic)
         },
     }
 }

@@ -3,8 +3,8 @@
         <v-layout wrap align-center justify-center row fill-height>
             <v-flex xs12 sm6 md3 class="mb-3">
                 <v-img
-                    :src="require('@/assets/imgs/svg/attendingfront.svg')"
-                    :lazy-src="require('@/assets/imgs/svg/attendingfront.svg')"
+                    :src="require('@/assets/img/svg/attendingfront.svg')"
+                    :lazy-src="require('@/assets/img/svg/attendingfront.svg')"
                     width="80%">
                     <v-layout
                         slot="placeholder"
@@ -34,7 +34,6 @@
 </template>
 
 <script>
-// import teamdata from '@/assets/data/speakers.json'
 import homeData from '@/assets/data/home.json'
 
 export default {

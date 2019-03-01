@@ -37,8 +37,8 @@
 
             <v-flex xs12 md5 class="hidden-sm-and-down pl-5">
                 <v-img
-                    :src="require('@/assets/imgs/home2.jpg')"
-                    :lazy-src="require('@/assets/imgs/home2.jpg')">
+                    :src="require('@/assets/img/home2.jpg')"
+                    :lazy-src="require('@/assets/img/home2.jpg')">
                     <v-layout
                         slot="placeholder"
                         fill-height

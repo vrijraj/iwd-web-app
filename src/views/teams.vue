@@ -6,8 +6,8 @@
             <v-flex xs12 md2 lg2 class="pa-3 hidden-sm-and-down">
                 <v-img
                     width="100%"
-                    :src="require('@/assets/imgs/svg/getting-started_bg.svg')"
-                    :lazy-src="require('@/assets/imgs/svg/getting-started_bg.svg')">
+                    :src="require('@/assets/img/svg/getting-started_bg.svg')"
+                    :lazy-src="require('@/assets/img/svg/getting-started_bg.svg')">
 
                         <v-layout
                             slot="placeholder"
@@ -30,7 +30,7 @@
 
             <v-flex xs12 md10 lg10 class="mt-3">     
                 <v-layout wrap row fill-height class="pa-0">
-                    <v-flex xs6 sm4 md2 lg2 v-for="(item) in speakersData" :key="item.name" class="text-xs-center" >
+                    <v-flex xs6 sm4 md2 lg2 v-for="(item,i) in speakersData" :key="i" class="text-xs-center" >
                         <v-hover>
                         <div 
                             slot-scope="{ hover }"
@@ -102,9 +102,9 @@ export default {
     methods:{
         getImgUrl(pic) {
             if(pic.length>0){
-                return require('@/assets/imgs/teams/'+pic)
+                return require('@/assets/img/teams/'+pic)
             }else{
-                return require('@/assets/imgs/speakers/avatar.png')
+                return require('@/assets/img/avatar.png')
             }
         },
     }
