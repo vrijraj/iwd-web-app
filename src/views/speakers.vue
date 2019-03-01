@@ -11,8 +11,8 @@
             <v-flex xs12 md2 lg2 class="pa-3">
                 <v-img
                     width="100%"
-                    :src="require('@/assets/imgs/svg/solutions_bg.svg')"
-                    :lazy-src="require('@/assets/imgs/svg/solutions_bg.svg')"
+                    :src="require('@/assets/img/svg/solutions_bg.svg')"
+                    :lazy-src="require('@/assets/img/svg/solutions_bg.svg')"
                     class="hidden-md-and-down">
 
                         <v-layout
@@ -92,9 +92,9 @@ export default {
     methods:{
         getImgUrl(pic) {
             if(pic.length>0){
-                return require('@/assets/imgs/speakers/'+pic)
+                return require('@/assets/img/speakers/'+pic)
             }else{
-                return require('@/assets/imgs/avatar.png')
+                return require('@/assets/img/avatar.png')
             }
         },
     }

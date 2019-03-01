@@ -59,9 +59,9 @@ export default {
     methods:{
         getImgUrl(pic) {
             if(pic.length>0){
-                return require('@/assets/imgs/speakers/'+pic)
+                return require('@/assets/img/speakers/'+pic)
             }else{
-                return require('@/assets/imgs/avatar.png')
+                return require('@/assets/img/avatar.png')
             }
         }
     }

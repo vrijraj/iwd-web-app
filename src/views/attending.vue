@@ -6,7 +6,6 @@
                     <attnedingHome/>
                     <attnedingExplore/>
                     <faq/>  
-                    <!-- <follow/>  -->
                 </v-flex>
             </v-layout>
         </v-container>
@@ -16,7 +15,6 @@
 <script>
 
 import faq from '@/components/faq'
-// import follow from '@/components/follow'
 import attnedingHome from '@/components/attending/attendingHome'
 import attnedingExplore from '@/components/attending/attendingExplore'
 
@@ -25,13 +23,12 @@ export default {
         faq,
         attnedingHome,
         attnedingExplore,
-        // follow
     },
     data() {
         return {
             show:false,
             imgPath:{
-                src: require('@/assets/imgs/bg.jpg')
+                src: require('@/assets/img/bg.jpg')
             }
         }
     },

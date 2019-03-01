@@ -6,8 +6,8 @@
             <v-flex xs12 md2 lg2 class="pa-3 hidden-sm-and-down">
                 <v-img
                     width="100%"
-                    :src="require('@/assets/imgs/svg/getting-started_bg.svg')"
-                    :lazy-src="require('@/assets/imgs/svg/getting-started_bg.svg')">
+                    :src="require('@/assets/img/svg/getting-started_bg.svg')"
+                    :lazy-src="require('@/assets/img/svg/getting-started_bg.svg')">
 
                         <v-layout
                             slot="placeholder"
@@ -102,9 +102,9 @@ export default {
     methods:{
         getImgUrl(pic) {
             if(pic.length>0){
-                return require('@/assets/imgs/teams/'+pic)
+                return require('@/assets/img/teams/'+pic)
             }else{
-                return require('@/assets/imgs/avatar.png')
+                return require('@/assets/img/avatar.png')
             }
         },
     }

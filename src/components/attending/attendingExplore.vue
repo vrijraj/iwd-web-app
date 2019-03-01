@@ -36,7 +36,6 @@
 </template>
 
 <script>
-// import teamdata from '@/assets/data/speakers.json'
 import homeData from '@/assets/data/home.json'
 
 export default {
