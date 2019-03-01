@@ -1,6 +1,6 @@
 <template>
   <v-slide-y-reverse-transition>
-    <v-content class="pa-0">
+    <v-content class="pa-0" v-show="show">
 
       <v-container fluid class="pa-0 mt-5" style="background-image: linear-gradient(white, #fafafa);">
         <v-layout wrap align-center justify-center row fill-height class="">
