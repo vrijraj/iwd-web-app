@@ -34,7 +34,7 @@
                     slider-color="yellow">
 
                     <v-tab ripple style="text-transform: capitalize;" >
-                        Schedule
+                        Sessions
                     </v-tab>
 
                     <v-tab-item>
@@ -63,7 +63,7 @@
                     </v-tab-item>
 
                     <v-tab ripple style="text-transform: capitalize;" >
-                        Session
+                        Schedule
                     </v-tab>
                     <v-tab-item>
                         <v-card flat>
