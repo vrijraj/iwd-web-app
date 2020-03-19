@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "material-design-icons-iconfont": "^5.0.1",
-    "register-service-worker": "^1.5.2",
+    "register-service-worker": "^1.7.1",
     "roboto-fontface": "*",
     "vue": "^2.5.22",
     "vue-router": "^3.0.1",
